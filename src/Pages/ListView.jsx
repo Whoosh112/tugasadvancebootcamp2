@@ -52,10 +52,12 @@ const ListView = () => {
           </thead>
           {users.map((user) => (
           <tbody key={user.id} className="usertable-list">
+            <tr>
               <td>{user.username}</td>
               <td>{user.password}</td>
               <td><button className="tomboltable" onClick={() => { setEditUser(user); setFormData({ username: user.username, password: user.password })}}>Edit</button></td>
               <td><button className="tomboltable" onClick={() => handleDelete(user.id)}>Delete</button></td>
+            </tr>
           </tbody>
         ))}
         </table>
