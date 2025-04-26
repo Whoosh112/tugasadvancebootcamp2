@@ -7,7 +7,6 @@
   .usertable-form{
     width: 100%;
     height: 100%;
-
   }
 
   .usertable-form > .usertable-list{
@@ -15,7 +14,6 @@
     align-items: center;
     background: rgba(217, 92, 156, 0.8);
     border: 5px solid white;
-    border-bottom: none;
   }
 
   .tomboltable{
@@ -23,6 +21,7 @@
     height: 40px;
     width: 60px;
     font-size: 12px;
+
   }
 
   .tombolcancel{
@@ -30,6 +29,9 @@
     height: 40px;
     width: 60px;
     font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .tombolsubmit{
@@ -37,6 +39,16 @@
     height: 40px;
     width: 60px;
     font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divtombol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
 
   @media screen and (max-width: 360px){
@@ -48,5 +60,9 @@
       height: 20px;
       width: 30px;
       font-size: 7px;
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }

@@ -63,13 +63,15 @@ const ListView = () => {
         </table>
 
       <h3>{editUser ? "Edit Pengguna" : "Tambah Pengguna"}</h3>
-      <form onSubmit={handleSubmit}>
+      <form className="formsubmit" onSubmit={handleSubmit}>
         <input type="text" value={formData.username} onChange={(e) => setFormData({ ...formData, username: e.target.value })} placeholder="Username" required/>
         <input type="text" value={formData.password} onChange={(e) => setFormData({ ...formData, password: e.target.value })} placeholder="Password" required/>
-        <button  className="tombolsubmit" type="submit">{editUser ? "Update" : "Add"}</button>
-        {editUser && (
-          <button className="tombolcancel" type="button" onClick={() => { setEditUser(null); setFormData({ username: "", password: "" })}}> Cancel</button>
-        )}
+        <div className="divtombol">
+          <button  className="tombolsubmit" type="submit">{editUser ? "Update" : "Add"}</button>
+          {editUser && (
+            <button className="tombolcancel" type="button" onClick={() => { setEditUser(null); setFormData({ username: "", password: "" })}}> Cancel</button>
+          )}
+        </div>
       </form>
     </div>
   );
