@@ -1,0 +1,82 @@
+.bagianfooter{
+  display: flex;
+}
+
+.logochillfooter{
+  width: 163px;
+  height: 75px;
+}
+
+.listgenre{
+    display: flex;
+  }
+
+  .bagiancopyright, .genre, .bantuan{
+    margin: 0 20px;
+  }
+  
+  .genre > ul, .bantuan > ul{
+    margin: 10px;
+  }
+  
+  .genre1 > li, .genre2 > li, .genre3 > li, .genre4 > li, .bantuan ul > li {
+    margin: 10px;
+  }
+  
+  .genreheader {
+    flex-basis: 100%; 
+  }
+
+  .genreheader, .bantuanheader {
+    display: flex;
+  }
+
+  .chevron{
+    display: none;
+    margin: 0 40%;
+  }
+  
+  @media only screen and (max-width: 360px){
+
+  .bagianfooter {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .bagiancopyright p{
+    font-size: 12px;
+  }
+
+  
+.logochillfooter{
+  width: 84px;
+  height: 40px;
+}
+
+
+  .genre{
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .chevron{
+    display: flex;
+    margin-right:10px;
+  }
+
+  .genreheader, .bantuanheader{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .genre1, .genre2, .genre3, .genre4{
+    display: none
+  }
+
+  .bantuan > ul, .genre > ul {
+    display: none
+  }
+  }
+
+  
+  

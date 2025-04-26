@@ -1,0 +1,15 @@
+.judul > h1, .judul > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .judul > h1{
+    font-size: 32px;
+  }
+  
+  .judul > p{
+    font-size: 16px;
+  }
+  

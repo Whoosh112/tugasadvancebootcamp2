@@ -1,0 +1,95 @@
+.arrayfilm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+  }
+
+.top10{
+  background: #B71F1D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 4px;
+  gap: 10px;
+  position: absolute;
+  right: 10%;
+  bottom: 86.25%;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.filmwrapper {
+  position: relative; 
+}
+
+.episodebarufilm {
+  display: flex;
+  background: #0F1E93;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
+  border-radius: 24px;
+  padding: 4px 10px;
+  gap: 4px;
+  letter-spacing: 0.2px;
+  position: absolute;
+  bottom: 90%;
+  left: 5%;
+}
+
+.tombolkiri {
+  width: 44px;
+  height: 44px;
+  radius: 24px;
+  position: relative;
+  left: 30px;
+  background: transparent;
+  border: 1px;
+  padding: 10px;
+  gap: 10px;
+  z-index: 1;
+}
+
+.tombolkanan {
+  width: 44px;
+  height: 44px;
+  radius: 24px;
+  position: relative;
+  right: 50px;
+  background: transparent;
+  border: 1px;
+  padding: 10px;
+  gap: 10px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .arrayfilm{
+    margin-left: 10px; 
+  }
+
+  .top10{
+    font-size:  6.69px;
+    border-top-right-radius: 1.91px;
+    border-bottom-left-radius: 1.91px;
+    padding: 1.91px;
+    gap: 4.78px;
+    right: 10%;
+    bottom: 83.5%;
+  }
+  
+  .episodebarufilm{
+    font-size: 5.74px;
+    border-radius: 12px;
+    border: 0.48px;
+    padding: 1.91px 4.78px;
+    gap: 1.19px;
+    letter-spacing: 0.1px;
+  }
+
+  .tombolkiri, .tombolkanan{
+    display: none;
+  }
+}

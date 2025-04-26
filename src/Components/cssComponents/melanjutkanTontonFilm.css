@@ -1,0 +1,67 @@
+.lanjutfilm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .filmwrapperlanjut {
+    position: relative; 
+  }
+  
+.episodebarufilmbluelock {
+    display: flex;
+    background: #0F1E93;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 140%;
+    border-radius: 24px;
+    padding: 4px 10px;
+    gap: 4px;
+    letter-spacing: 0.2px;
+    position: absolute;
+    bottom: 75%;
+    left: 5%;
+  }
+
+.tombolkiri {
+  width: 44px;
+  height: 44px;
+  radius: 24px;
+  position: relative;
+  left: 30px;
+  background: transparent;
+  border: 1px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.tombolkanan {
+  width: 44px;
+  height: 44px;
+  radius: 24px;
+  position: relative;
+  right: 30px;
+  background: transparent;
+  border: 1px;
+  padding: 10px;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 360px) {
+
+
+.episodebaru{
+  font-size: 11px;
+}
+
+.tombolkiri, .tombolkanan{
+  display: none;
+}
+
+.filmwrapperlanjut {
+  left: 330px;
+}
+}

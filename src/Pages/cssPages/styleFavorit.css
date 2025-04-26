@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.favoritpage {
+    background:rgba(24, 26, 28, 1);
+    background-size: auto; background-repeat: no-repeat; background-position: center;
+  }
+
+.beranda{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  color: rgb(224,224,224);
+  text-align: left;
+}
+
+
+      
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top-style: solid;
+  border-top-color: grey;
+  border-width: thin;
+  padding: 3% ;
+}
+
+@media only screen and (max-width: 360px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .kotakfilm {
+    padding: 20px; 
+  }
+}
